@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XuY-Cg-a7k" customClass="ZFBMineInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="451" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friend_head_01" translatesAutoresizingMaskIntoConstraints="NO" id="yzv-W7-M7h">
+                        <rect key="frame" x="16" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="05B-20-Q1F"/>
+                            <constraint firstAttribute="width" secondItem="yzv-W7-M7h" secondAttribute="height" id="d4P-wD-vQl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="德玛西亚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iag-ah-2qk">
+                        <rect key="frame" x="112" y="12" width="68" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="demaxiya@itcast.cn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aog-sq-ykW">
+                        <rect key="frame" x="112" y="40" width="129" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whi-pK-apS">
+                        <rect key="frame" x="188" y="69" width="60" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="67I-t4-DeA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="收藏" image="mine_favorite">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72P-Cd-oia">
+                        <rect key="frame" x="112" y="69" width="60" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="EU0-n7-pvS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="相册" image="mine_album">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHG-DL-ZAK">
+                        <rect key="frame" x="264" y="69" width="88" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="88" id="gdF-a8-Bdp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="会员中心" image="mine_vip">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="72P-Cd-oia" firstAttribute="leading" secondItem="aog-sq-ykW" secondAttribute="leading" id="1cS-MB-ALl"/>
+                <constraint firstItem="whi-pK-apS" firstAttribute="centerY" secondItem="72P-Cd-oia" secondAttribute="centerY" id="1re-8U-CmU"/>
+                <constraint firstItem="yzv-W7-M7h" firstAttribute="leading" secondItem="XuY-Cg-a7k" secondAttribute="leading" constant="16" id="1z2-Ub-0uy"/>
+                <constraint firstItem="rHG-DL-ZAK" firstAttribute="leading" secondItem="whi-pK-apS" secondAttribute="trailing" constant="16" id="5v9-W3-Hy0"/>
+                <constraint firstItem="rHG-DL-ZAK" firstAttribute="centerY" secondItem="whi-pK-apS" secondAttribute="centerY" id="HTf-pB-CkM"/>
+                <constraint firstItem="yzv-W7-M7h" firstAttribute="centerY" secondItem="XuY-Cg-a7k" secondAttribute="centerY" id="LI4-bg-izC"/>
+                <constraint firstItem="whi-pK-apS" firstAttribute="leading" secondItem="72P-Cd-oia" secondAttribute="trailing" constant="16" id="W4Z-wX-tql"/>
+                <constraint firstItem="aog-sq-ykW" firstAttribute="centerY" secondItem="yzv-W7-M7h" secondAttribute="centerY" constant="-2" id="dEx-SQ-FAo"/>
+                <constraint firstItem="aog-sq-ykW" firstAttribute="leading" secondItem="iag-ah-2qk" secondAttribute="leading" id="h8a-DO-c8W"/>
+                <constraint firstItem="iag-ah-2qk" firstAttribute="centerY" secondItem="XuY-Cg-a7k" secondAttribute="centerY" constant="-28" id="oe2-TB-j9m"/>
+                <constraint firstItem="72P-Cd-oia" firstAttribute="bottom" secondItem="yzv-W7-M7h" secondAttribute="bottom" id="wCr-c8-Ltf"/>
+                <constraint firstItem="iag-ah-2qk" firstAttribute="leading" secondItem="yzv-W7-M7h" secondAttribute="trailing" constant="16" id="xi4-1Q-Qr8"/>
+            </constraints>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="friend_head_01" width="180" height="180"/>
+        <image name="mine_album" width="21" height="21"/>
+        <image name="mine_favorite" width="21" height="21"/>
+        <image name="mine_vip" width="21" height="21"/>
+    </resources>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="uw2-nn-kOA" customClass="ZFBFriendCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uw2-nn-kOA" id="xX1-S4-5GJ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friend_head_01" translatesAutoresizingMaskIntoConstraints="NO" id="3e9-G3-se5">
+                        <rect key="frame" x="8" y="9" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="UMA-DI-Zgx"/>
+                            <constraint firstAttribute="width" constant="50" id="yrt-GA-lUh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消息中心" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEU-4G-Fgy">
+                        <rect key="frame" x="66" y="15" width="64" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[转账]向你转账998.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KT-CF-s3S">
+                        <rect key="frame" x="66" y="36" width="133" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昨天" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqk-X6-QiR">
+                        <rect key="frame" x="288" y="9" width="24" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3e9-G3-se5" firstAttribute="leading" secondItem="xX1-S4-5GJ" secondAttribute="leading" constant="8" id="5Dr-Zt-O6x"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="tqk-X6-QiR" secondAttribute="trailing" id="5sd-mt-jR8"/>
+                    <constraint firstItem="4KT-CF-s3S" firstAttribute="leading" secondItem="3e9-G3-se5" secondAttribute="trailing" constant="8" id="6mz-FQ-CZs"/>
+                    <constraint firstItem="tqk-X6-QiR" firstAttribute="top" secondItem="3e9-G3-se5" secondAttribute="top" id="AHg-Mv-i6e"/>
+                    <constraint firstItem="nEU-4G-Fgy" firstAttribute="top" secondItem="3e9-G3-se5" secondAttribute="top" constant="6" id="LVk-rF-F0s"/>
+                    <constraint firstItem="3e9-G3-se5" firstAttribute="centerY" secondItem="xX1-S4-5GJ" secondAttribute="centerY" id="gsY-dm-xzL"/>
+                    <constraint firstItem="nEU-4G-Fgy" firstAttribute="leading" secondItem="3e9-G3-se5" secondAttribute="trailing" constant="8" id="j08-Mh-IAX"/>
+                    <constraint firstItem="4KT-CF-s3S" firstAttribute="bottom" secondItem="3e9-G3-se5" secondAttribute="bottom" constant="-6" id="vfd-A1-s7f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconView" destination="3e9-G3-se5" id="c4T-Ag-hcK"/>
+                <outlet property="subTitleView" destination="4KT-CF-s3S" id="3Ze-Hb-b5n"/>
+                <outlet property="timeView" destination="tqk-X6-QiR" id="voO-du-yhM"/>
+                <outlet property="titleView" destination="nEU-4G-Fgy" id="Nrn-BO-Sql"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="271"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="friend_head_01" width="180" height="180"/>
+    </resources>
+</document>

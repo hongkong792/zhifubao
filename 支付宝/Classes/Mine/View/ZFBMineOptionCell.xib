@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Xgz-TT-zzz" customClass="ZFBMineOptionCell">
+            <rect key="frame" x="0.0" y="0.0" width="161" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="161" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="stock" translatesAutoresizingMaskIntoConstraints="NO" id="oU5-yX-KYg">
+                        <rect key="frame" x="16" y="15" width="21" height="21"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bU2-Et-uwz">
+                        <rect key="frame" x="53" y="7" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZe-S7-shS">
+                        <rect key="frame" x="53" y="28" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bU2-Et-uwz" firstAttribute="centerY" secondItem="Xgz-TT-zzz" secondAttribute="centerY" constant="-10" id="6DP-V0-GfR"/>
+                <constraint firstItem="dZe-S7-shS" firstAttribute="centerY" secondItem="Xgz-TT-zzz" secondAttribute="centerY" constant="10" id="9eU-hV-cda"/>
+                <constraint firstItem="oU5-yX-KYg" firstAttribute="leading" secondItem="Xgz-TT-zzz" secondAttribute="leading" constant="16" id="BZm-f3-c98"/>
+                <constraint firstItem="bU2-Et-uwz" firstAttribute="leading" secondItem="oU5-yX-KYg" secondAttribute="trailing" constant="16" id="W0i-6m-W0y"/>
+                <constraint firstItem="oU5-yX-KYg" firstAttribute="centerY" secondItem="Xgz-TT-zzz" secondAttribute="centerY" id="ji8-vx-8Sk"/>
+                <constraint firstItem="dZe-S7-shS" firstAttribute="leading" secondItem="bU2-Et-uwz" secondAttribute="leading" id="qqZ-le-fxS"/>
+            </constraints>
+            <size key="customSize" width="161" height="50"/>
+            <connections>
+                <outlet property="iconView" destination="oU5-yX-KYg" id="1Rw-ZQ-lu7"/>
+                <outlet property="messageView" destination="dZe-S7-shS" id="e76-6H-x0n"/>
+                <outlet property="nameView" destination="bU2-Et-uwz" id="5fT-yd-ZXK"/>
+            </connections>
+            <point key="canvasLocation" x="392.5" y="367"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="stock" width="21" height="21"/>
+    </resources>
+</document>
